@@ -15,8 +15,11 @@ E così via...
 
 */ 
 
-const buttonEl = document.querySelector('button');
-console.log(buttonEl);
+const buttonOnEl = document.querySelector('.turn_on');
+console.log(buttonOnEl);
+
+const buttonOffEl = document.querySelector('.turn_off')
+console.log(buttonOffEl);
 
 const imgOffEl = document.querySelector('.lamp_off');
 console.log(imgOffEl);
@@ -24,8 +27,19 @@ console.log(imgOffEl);
 const imgOnEl = document.querySelector('.lamp_on');
 console.log(imgOnEl);
 
-buttonEl.addEventListener('click', function(){
-    console.log('You clicked the button');
+buttonOnEl.addEventListener('click', function(){
     imgOffEl.style.display = 'none'
     imgOnEl.style.display = 'inline-block';
+    buttonOnEl.style.display = 'none'
+    buttonOffEl.style.display = 'inline-block'
+    console.log('You turned on the light');
+})
+
+buttonOffEl.addEventListener('click', function(){
+    imgOffEl.style.display = 'inline-block';
+    imgOnEl.style.display = 'none'
+    buttonOffEl.style.display = 'none'
+    buttonOnEl.style.display = 'inline-block'
+    console.log('You turned off the light');
+    
 })
