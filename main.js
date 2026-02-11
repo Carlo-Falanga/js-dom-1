@@ -16,11 +16,7 @@ E così via...
 */
 
 const buttonEl = document.querySelector("button");
-console.log(buttonEl);
-
 const imgEl = document.querySelector("img");
-console.log(imgEl);
-
 
 buttonEl.addEventListener("click", function () {
   if (this.textContent.includes('Accendi')) {
