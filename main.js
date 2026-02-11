@@ -14,3 +14,18 @@ Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accend
 E così via...
 
 */ 
+
+const buttonEl = document.querySelector('button');
+console.log(buttonEl);
+
+const imgOffEl = document.querySelector('.lamp_off');
+console.log(imgOffEl);
+
+const imgOnEl = document.querySelector('.lamp_on');
+console.log(imgOnEl);
+
+buttonEl.addEventListener('click', function(){
+    console.log('You clicked the button');
+    imgOffEl.style.display = 'none'
+    imgOnEl.style.display = 'inline-block';
+})
