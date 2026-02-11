@@ -4,16 +4,7 @@
     box-sizing: border-box;
 }
 
-.lamp_on{
-    display: none;
-}
-
-.turn_off{
-    display: none;
-}
-
-
-button{
+button {
     border-style: none;
     border-radius: 20px;
     background-color: #4681f4;
