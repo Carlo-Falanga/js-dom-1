@@ -11,3 +11,12 @@
 .turn_off{
     display: none;
 }
+
+
+button{
+    border-style: none;
+    border-radius: 20px;
+    background-color: #4681f4;
+    color: white;
+    padding: 0.8rem;
+}
